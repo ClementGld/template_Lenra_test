@@ -1,10 +1,10 @@
 'use strict'
 
-module.exports = (data, props) => {
+module.exports = (data, props, context) => {
     var userData = data[0]
     return {
         type: "text",
-        value: `Email : ${userData._user.email}`
+        value: JSON.stringify(context)
     }
 }
 
