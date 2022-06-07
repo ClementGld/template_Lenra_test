@@ -21,7 +21,7 @@ module.exports = (data, props) => {
       {
         type: "widget",
         name: "userData",
-        context: true,
+        context: false,
       },
     ]
   }

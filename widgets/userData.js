@@ -1,10 +1,13 @@
 'use strict'
 
 module.exports = (data, props, context) => {
-    var userData = data[0]
+    var userData = JSON.stringify(context)
+    if (userData == null || userData == undefined) {
+        userData = "No user data"
+    }
     return {
         type: "text",
-        value: JSON.stringify(context)
+        value: userData
     }
 }
 
