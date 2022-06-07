@@ -20,7 +20,7 @@ module.exports = (data, props) => {
           },
           {
             type: "text",
-            value: `Hello ${data.value}!`
+            value: `Hello world!`
           },
           {
             type: "textfield",
