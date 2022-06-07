@@ -16,6 +16,7 @@ module.exports = (data, props) => {
       {
         type: "widget",
         name: "userData",
+        context: true,
         query: {
           "$find": {
             "_datastore": "_users",
@@ -26,6 +27,7 @@ module.exports = (data, props) => {
       {
         type: "widget",
         name: "userData",
+        context: false,
         query: {
           "$find": {
             "_datastore": "_users",
