@@ -16,12 +16,12 @@ module.exports = (data, props) => {
       {
         type: "widget",
         name: "userData",
-        context: true,
+        context: false,
       },
       {
         type: "widget",
         name: "userData",
-        context: false,
+        context: true,
       },
     ]
   }
