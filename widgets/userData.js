@@ -1,12 +1,9 @@
 'use strict'
 
-module.exports = (data, props) => {
+module.exports = (data, props, context) => {
+    var userData = JSON.stringify(context)
     return {
-        type: "context",
-        child: {
-             type: "text",
-            value: context.size
-        } 
+        type: "text",
+        value: userData
     }
 }
-
